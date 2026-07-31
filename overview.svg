@@ -1,0 +1,128 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZsK AI shell overview">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="100%" stop-color="#0D1220"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C6FFF"/>
+      <stop offset="100%" stop-color="#35E7C6"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7C6FFF"/>
+      <stop offset="100%" stop-color="#35E7C6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="760" fill="#050710"/>
+
+  <!-- App window -->
+  <g filter="url(#softShadow)">
+    <rect x="40" y="40" width="1200" height="680" rx="16" fill="url(#bgGrad)" stroke="#1E2536" stroke-width="1.5"/>
+
+    <!-- Title bar -->
+    <rect x="40" y="40" width="1200" height="52" rx="16" fill="#0D1220"/>
+    <rect x="40" y="76" width="1200" height="16" fill="#0D1220"/>
+    <circle cx="72" cy="66" r="6.5" fill="#FF6B6B"/>
+    <circle cx="96" cy="66" r="6.5" fill="#FFB454"/>
+    <circle cx="120" cy="66" r="6.5" fill="#35E7C6"/>
+    <text x="640" y="71" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-size="14" letter-spacing="1" fill="#8993A8">zsk — watson shell — ~/projects/etl</text>
+    <path d="M22 44 L74 80 L22 116" transform="translate(1080,-20) scale(0.28)" fill="none" stroke="url(#accentGrad)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Sidebar: project tree -->
+    <rect x="40" y="92" width="220" height="628" fill="#0B0F1A"/>
+    <text x="64" y="128" font-family="ui-monospace,Consolas,monospace" font-size="13" letter-spacing="2" fill="#5B6478">PROJECT</text>
+
+    <g font-family="ui-monospace,Consolas,monospace" font-size="14" fill="#C7CCDA">
+      <circle cx="70" cy="156" r="3" fill="#7C6FFF"/>
+      <text x="84" y="161">Cloudant_ETL_Core</text>
+
+      <circle cx="86" cy="184" r="3" fill="#35E7C6"/>
+      <text x="100" y="189" fill="#8993A8">watson_config.yaml</text>
+
+      <circle cx="86" cy="210" r="3" fill="#FFB454"/>
+      <text x="100" y="215" fill="#8993A8">analysis.js</text>
+
+      <circle cx="86" cy="236" r="3" fill="#35E7C6"/>
+      <text x="100" y="241" fill="#8993A8">schema.sql</text>
+
+      <circle cx="86" cy="262" r="3" fill="#7C6FFF"/>
+      <text x="100" y="267" fill="#8993A8">cloudant_v3_log.json</text>
+    </g>
+
+    <rect x="64" y="300" width="172" height="1" fill="#1E2536"/>
+    <text x="64" y="328" font-family="ui-monospace,Consolas,monospace" font-size="13" letter-spacing="2" fill="#5B6478">SESSIONS</text>
+    <g font-family="ui-monospace,Consolas,monospace" font-size="13" fill="#8993A8">
+      <text x="64" y="356">● Production_Log</text>
+      <text x="64" y="380">○ Staging_Debug</text>
+      <text x="64" y="404">○ Local_Sandbox</text>
+    </g>
+
+    <!-- Main terminal pane -->
+    <g font-family="ui-monospace,Consolas,monospace" font-size="15">
+      <text x="284" y="130" fill="#5B6478">14:02:11 ~/projects/etl</text>
+      <text x="284" y="154"><tspan fill="#35E7C6">❯ </tspan><tspan fill="#E7E9EE">watson run-analysis --db cloudant_prod --depth full</tspan></text>
+
+      <text x="284" y="184" fill="#8993A8">✔ Connecting to IBM Cloudant instance...</text>
+      <text x="284" y="206" fill="#8993A8">✔ Triggering Watson ML analysis pipeline...</text>
+
+      <rect x="284" y="224" width="600" height="140" rx="10" fill="#0D1424" stroke="#1E2536"/>
+      <text x="304" y="252" fill="#7C6FFF">{</text>
+      <text x="324" y="276" fill="#C7CCDA">"status": <tspan fill="#35E7C6">"success"</tspan>,</text>
+      <text x="324" y="300" fill="#C7CCDA">"records_processed": <tspan fill="#FFB454">1402991</tspan>,</text>
+      <text x="324" y="324" fill="#C7CCDA">"anomalies_detected": <tspan fill="#FFB454">14</tspan>,</text>
+      <text x="324" y="348" fill="#C7CCDA">"ai_confidence": <tspan fill="#FFB454">0.992</tspan></text>
+      <text x="304" y="368" fill="#7C6FFF">}</text>
+
+      <text x="284" y="404" fill="#5B6478">14:03:02 ~/projects/etl</text>
+      <text x="284" y="428"><tspan fill="#35E7C6">❯ </tspan><tspan fill="#E7E9EE">watson optimize --dry-run</tspan></text>
+      <text x="284" y="452" fill="#8993A8">→ Suggested: watson prune --duplicates</text>
+
+      <text x="284" y="490"><tspan fill="#35E7C6">❯ </tspan><tspan fill="#E7E9EE" opacity="0.85">watson sync --2fa</tspan><tspan fill="#35E7C6"> ▍</tspan></text>
+    </g>
+
+    <!-- Right panel: Watson analysis -->
+    <rect x="924" y="92" width="276" height="628" fill="#0B0F1A"/>
+    <text x="948" y="128" font-family="ui-monospace,Consolas,monospace" font-size="13" letter-spacing="2" fill="#5B6478">WATSON ANALYSIS</text>
+
+    <!-- Gauge -->
+    <circle cx="1062" cy="212" r="56" fill="none" stroke="#1E2536" stroke-width="10"/>
+    <circle cx="1062" cy="212" r="56" fill="none" stroke="url(#accentGrad)" stroke-width="10" stroke-linecap="round" stroke-dasharray="330 351.86" transform="rotate(-90 1062 212)"/>
+    <text x="1062" y="206" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-size="24" font-weight="700" fill="#E7E9EE">99.2%</text>
+    <text x="1062" y="226" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="1" fill="#8993A8">AI CONFIDENCE</text>
+
+    <!-- Bars -->
+    <text x="948" y="308" font-family="ui-monospace,Consolas,monospace" font-size="12" fill="#5B6478">NODE EFFICIENCY</text>
+    <g>
+      <rect x="948" y="360" width="20" height="50" rx="4" fill="url(#barGrad)"/>
+      <rect x="978" y="330" width="20" height="80" rx="4" fill="url(#barGrad)"/>
+      <rect x="1008" y="345" width="20" height="65" rx="4" fill="url(#barGrad)"/>
+      <rect x="1038" y="300" width="20" height="110" rx="4" fill="url(#barGrad)"/>
+      <rect x="1068" y="320" width="20" height="90" rx="4" fill="url(#barGrad)"/>
+      <rect x="1098" y="290" width="20" height="120" rx="4" fill="url(#barGrad)"/>
+      <rect x="1128" y="335" width="20" height="75" rx="4" fill="url(#barGrad)"/>
+      <rect x="1158" y="312" width="20" height="98" rx="4" fill="url(#barGrad)"/>
+    </g>
+    <line x1="948" y1="412" x2="1180" y2="412" stroke="#1E2536" stroke-width="1"/>
+
+    <g font-family="ui-monospace,Consolas,monospace" font-size="12" fill="#8993A8">
+      <text x="948" y="448">Query latency</text>
+      <text x="1180" y="448" text-anchor="end" fill="#35E7C6">14ms</text>
+      <text x="948" y="472">Active nodes</text>
+      <text x="1180" y="472" text-anchor="end" fill="#35E7C6">3 / 3</text>
+      <text x="948" y="496">Status</text>
+      <text x="1180" y="496" text-anchor="end" fill="#FFB454">Optimal</text>
+    </g>
+
+    <rect x="948" y="524" width="232" height="1" fill="#1E2536"/>
+    <text x="948" y="552" font-family="ui-monospace,Consolas,monospace" font-size="13" letter-spacing="2" fill="#5B6478">DEVICES</text>
+    <g font-family="ui-monospace,Consolas,monospace" font-size="12" fill="#8993A8">
+      <circle cx="954" cy="576" r="3" fill="#35E7C6"/><text x="966" y="580">MacBook Pro — synced</text>
+      <circle cx="954" cy="600" r="3" fill="#35E7C6"/><text x="966" y="604">iPhone 16 — synced</text>
+      <circle cx="954" cy="624" r="3" fill="#5B6478"/><text x="966" y="628">iPad — offline</text>
+    </g>
+  </g>
+</svg>
