@@ -10,10 +10,10 @@
       <stop offset="100%" stop-color="#372F8C"/>
     </linearGradient>
   </defs>
-
+ 
   <!-- Prompt caret -->
   <path d="M22 44 L74 80 L22 116" fill="none" stroke="url(#caretLight)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-
+ 
   <!-- AI spark cluster (caret becomes a neural node) -->
   <g>
     <line x1="86" y1="44" x2="106" y2="30" stroke="#C9791E" stroke-width="2.5"/>
@@ -24,21 +24,22 @@
     <circle cx="112" cy="52" r="4" fill="#C9791E"/>
     <circle cx="96" cy="66" r="4" fill="#C9791E"/>
   </g>
-
+ 
   <!-- Wordmark -->
   <text x="140" y="112" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="92" letter-spacing="-2" fill="url(#wordmarkLight)">ZsK</text>
-
+ 
   <!-- AI pill -->
   <g transform="translate(388,58)">
     <rect x="0" y="0" width="76" height="40" rx="20" fill="none" stroke="#0F8C7A" stroke-width="2.5"/>
     <text x="38" y="27" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="22" letter-spacing="1" fill="#0F8C7A" text-anchor="middle">AI</text>
   </g>
-
+ 
   <!-- Terminal cursor -->
   <rect x="480" y="46" width="14" height="70" fill="#0F8C7A">
     <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
-
+ 
   <!-- tagline tag -->
   <text x="140" y="140" font-family="ui-monospace,Consolas,monospace" font-size="16" letter-spacing="3" fill="#5B6478">SHELL // WATSON ENGINE</text>
 </svg>
+ 
