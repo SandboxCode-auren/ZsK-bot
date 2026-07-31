@@ -18,35 +18,37 @@
     </filter>
   </defs>
  
-  <!-- Prompt caret -->
-  <path d="M22 44 L74 80 L22 116" fill="none" stroke="url(#caretDark)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowDark)"/>
+  <g transform="translate(4,0)">
+    <!-- Prompt caret -->
+    <path d="M22 44 L74 80 L22 116" fill="none" stroke="url(#caretDark)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowDark)"/>
  
-  <!-- AI spark cluster (caret becomes a neural node) -->
-  <g filter="url(#glowDark)">
-    <line x1="86" y1="44" x2="106" y2="30" stroke="#FFB454" stroke-width="2.5"/>
-    <line x1="86" y1="44" x2="112" y2="52" stroke="#FFB454" stroke-width="2.5"/>
-    <line x1="86" y1="44" x2="96" y2="66" stroke="#FFB454" stroke-width="2.5"/>
-    <circle cx="86" cy="44" r="6.5" fill="#FFB454"/>
-    <circle cx="106" cy="30" r="4" fill="#FFB454"/>
-    <circle cx="112" cy="52" r="4" fill="#FFB454"/>
-    <circle cx="96" cy="66" r="4" fill="#FFB454"/>
+    <!-- AI spark cluster (caret becomes a neural node) -->
+    <g filter="url(#glowDark)">
+      <line x1="86" y1="44" x2="106" y2="30" stroke="#FFB454" stroke-width="2.5"/>
+      <line x1="86" y1="44" x2="112" y2="52" stroke="#FFB454" stroke-width="2.5"/>
+      <line x1="86" y1="44" x2="96" y2="66" stroke="#FFB454" stroke-width="2.5"/>
+      <circle cx="86" cy="44" r="6.5" fill="#FFB454"/>
+      <circle cx="106" cy="30" r="4" fill="#FFB454"/>
+      <circle cx="112" cy="52" r="4" fill="#FFB454"/>
+      <circle cx="96" cy="66" r="4" fill="#FFB454"/>
+    </g>
+ 
+    <!-- Wordmark -->
+    <text x="140" y="112" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="92" letter-spacing="-2" fill="url(#wordmarkDark)">ZsK</text>
+ 
+    <!-- AI pill -->
+    <g transform="translate(388,58)">
+      <rect x="0" y="0" width="76" height="40" rx="20" fill="none" stroke="#35E7C6" stroke-width="2.5"/>
+      <text x="38" y="27" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="22" letter-spacing="1" fill="#35E7C6" text-anchor="middle">AI</text>
+    </g>
+ 
+    <!-- Blinking terminal cursor -->
+    <rect x="480" y="46" width="14" height="70" fill="#35E7C6" filter="url(#glowDark)">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+ 
+    <!-- tagline tag -->
+    <text x="254" y="140" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-size="16" letter-spacing="3" fill="#8993A8">SHELL // WATSON ENGINE</text>
   </g>
- 
-  <!-- Wordmark -->
-  <text x="140" y="112" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="92" letter-spacing="-2" fill="url(#wordmarkDark)">ZsK</text>
- 
-  <!-- AI pill -->
-  <g transform="translate(388,58)">
-    <rect x="0" y="0" width="76" height="40" rx="20" fill="none" stroke="#35E7C6" stroke-width="2.5"/>
-    <text x="38" y="27" font-family="'JetBrains Mono','Fira Code',ui-monospace,Consolas,monospace" font-weight="700" font-size="22" letter-spacing="1" fill="#35E7C6" text-anchor="middle">AI</text>
-  </g>
- 
-  <!-- Blinking terminal cursor -->
-  <rect x="480" y="46" width="14" height="70" fill="#35E7C6" filter="url(#glowDark)">
-    <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
-  </rect>
- 
-  <!-- tagline tag -->
-  <text x="140" y="140" font-family="ui-monospace,Consolas,monospace" font-size="16" letter-spacing="3" fill="#8993A8">SHELL // WATSON ENGINE</text>
 </svg>
  
