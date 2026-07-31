@@ -11,8 +11,8 @@
 <p align="center">
     <a href="https://zsk.ai" target="_blank">→ https://zsk.ai ←</a>
 </p>
+<p align="center">
   An AI-augmented terminal shell that thinks alongside you - synced, secure, and scriptable.
-  An AI-augmented terminal shell that thinks alongside you — synced, secure, and scriptable.
   <br />
   <br />
   <a href="https://github.com/clauderiks/ZsK-bot/releases"><img src="https://img.shields.io/github/release/clauderiks/ZsK-bot.svg" alt="Latest Release"></a>
