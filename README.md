@@ -3,7 +3,7 @@
   <a style="text-decoration: none;" href="https://zsk.ai">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
-      <img alt="ZsK AI — an AI-augmented terminal shell" width="560" src="./assets/logo-light.svg">
+      <img alt="ZsK AI - an AI-augmented terminal shell" width="560" src="./assets/logo-light.svg">
     </picture>
   </a>
 </p>
