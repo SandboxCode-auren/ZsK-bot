@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a style="text-decoration: none;" href="https://zsk.ai">
+  <a style="text-decoration: none;" href="https://zs-k-bot.vercel.app">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
       <img alt="ZsK AI - an AI-augmented terminal shell" width="560" src="./assets/logo-light.svg">
