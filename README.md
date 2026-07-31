@@ -24,7 +24,7 @@
 <br />
 
 <p align="center">
-  <img src="./assets/overview.svg" alt="ZsK AI overview — Watson shell with AI analysis panel" />
+  <img src="./assets/overview.svg" alt="ZsK AI overview - Watson shell with AI analysis panel" />
 </p>
 
 ## 🌟 Features
