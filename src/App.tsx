@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { SidebarProjectTree } from './components/SidebarProjectTree';
 import { SidebarWatsonAnalysis } from './components/SidebarWatsonAnalysis';
@@ -443,6 +444,9 @@ export default function App() {
         onClose={() => setActiveFile(null)}
         onSaveFile={handleSaveFile}
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
