@@ -80,7 +80,7 @@ npm run dev
 
 The shell runs at `http://localhost:3000`.
 
-> ⚠️ Don't commit `.env` or any populated `firebase-applet-config.json` — treat both as secrets, even in a private fork.
+> ⚠️ Don't commit `.env` or any populated `firebase-applet-config.json` - treat both as secrets, even in a private fork.
 
 ## Authors
 
