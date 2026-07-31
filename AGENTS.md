@@ -9,7 +9,7 @@ This is the GitHub CLI (`gh`), a command-line tool for interacting with GitHub. 
 ## Build, Test, and Lint
 
 ```bash
-make                                       # Build (Unix) — outputs bin/gh
+make                                       # Build (Unix) - outputs bin/gh
 go run script/build.go                     # Build (Windows)
 go test ./...                              # All unit tests
 go test ./pkg/cmd/issue/list/... -run TestIssueList_nontty  # Single test
