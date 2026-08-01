@@ -9,7 +9,7 @@
 </p>
 
     <a href="https://zs-k-bot.vercel.app">zs-k-bot.vercel.app →</a>
-    <a href="https://zs-k-bot.vercel.app  ←</a>
+    <a href="https://zs-k-bot.vercel.app" target="_blank">→ https://zs-k-bot.vercel.app ←</a>
 </p>
 <p align="center">
   An AI-augmented terminal shell that thinks alongside you - synced, secure, and scriptable.
