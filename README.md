@@ -8,7 +8,7 @@
   </a>
 </p>
 
-<p align="center"> 
+    <a href="https://zs-k-bot.vercel.app">zs-k-bot.vercel.app →</a>
     <a href="https://zs-k-bot.vercel.app  ←</a>
 </p>
 <p align="center">
