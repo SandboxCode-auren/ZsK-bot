@@ -28,10 +28,10 @@
 </p>
 
 ## 🌟 Features
-
-- Watson AI engine on top of Gemini — get command analysis, optimization hints, and anomaly detection inline, not in a separate chat window
-- Cloudant-backed cloud sync for sessions, command history, and devices — pick up the same shell on your laptop, tablet, or phone
+- Watson AI engine on top of Gemini - get command analysis, optimization hints, and anomaly detection inline, not in a separate chat window
+- Cloudant-backed cloud sync for sessions, command history, and devices - pick up the same shell on your laptop, tablet, or phone
 - Mandatory 2FA and AES-256-GCM session encryption, so a synced shell is never an open shell
+- Real syntax highlighting for JS, SQL, YAML, JSON, Rust, and more - straight in the terminal output
 - Real syntax highlighting for JS, SQL, YAML, JSON, Rust, and more — straight in the terminal output
 - A real project tree in the sidebar, with a file viewer for anything you `cat`
 - Built-in RFC / spec viewer so you don't have to alt-tab to read the standard you're implementing against
